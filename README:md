@@ -8,15 +8,13 @@ This demo project showcases secure application development using Next.js, Postgr
 
 ## Setup
 
-1. **Clone the repository**
+1. Clone the repository
 
-2. **Configure Environment Variables**  
-   Copy `.env.example` to `.env` and set your keys and database credentials.
+2. Configure Environment Variables
+   - Copy `.env.example` to `.env` and set your keys and database credentials.
+   - Run generate_keys.sh or use provided private & public keys
 
-3. **Run Database Migrations**  
-   Execute the SQL in `migrations/init.sql` against your PostgreSQL database.
 
 4. **Start the Application**  
    Build and run the Docker containers:  
-   ```bash
    docker-compose up --build
