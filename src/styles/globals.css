@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+    @font-face {
+        font-family: "PoppinsThin";
+        src: url("../../public/fonts/Poppins/Poppins-Thin.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-family: "PoppinsEB";
+        src: url("../../public/fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-family: "Poppins";
+        src: url("../../public/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+    }
+    
+    #content{
+        display: flexbox;
+        align-items: center;
+        align-content: center;
+    }
+
+textarea{
+    font-family: "Poppins";
+    width: 50vw;
+    height: 300px;
+    border: none;
+    padding: 1%;
+    margin: auto;
+    border: 1px solid #bc28ff;
+    margin-bottom: 5%;
+
+}
+
+button{
+    width: fit-content;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(to right, #3f5EFB, #FC466B);
+}
+
+table{
+    padding: 1%;
+    margin: auto;
+
+}
+tr{
+    margin: auto;
+    text-align: center;
+    overflow-x: scroll;
+}
+.thin{
+    font-family: "PoppinsThin";
+}
+.sign{
+    margin: auto;
+    width: 50vw;
+    overflow-x: scroll;
+}
+.header{
+    /* src/components/Header.module.css */
+
+    font-family: "PoppinsEB";
+	text-transform: uppercase;
+	text-align: center;
+	background: linear-gradient(to right, #3f5EFB, #FC466B);
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+div{
+display: grid;
+}
+
+.verified{
+    border-top: 1px solid slateblue;
+    border-bottom: 1px solid slateblue;
+}
+.unverified{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-top: 1px solid slateblue;
+    border-bottom: 1px solid slateblue;
+
+}
+
+.verified-data{
+    padding-bottom: 3%;
+    border-top: 1px solid slateblue;
+    border-bottom: 1px solid slateblue;    overflow-x: scroll;
+    background: linear-gradient(to right, #000, #722b9e, #000);
+}
+.verified-data p{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-top: 1px solid slateblue;
+    border-bottom: 1px solid slateblue;
+    overflow-x: scroll;
+    background: linear-gradient(to right, #000, #100c12, #000);
+}

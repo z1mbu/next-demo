@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgres://user:password@db:5432/mydb
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - PRIVATE_KEY=${PRIVATE_KEY}
+      - PUBLIC_KEY=${PUBLIC_KEY}
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+      - /app/node_modules  # Prevents overwriting node_modules in container
+    command: npm run dev  # Start Next.js with hot reload
+
+  db:
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

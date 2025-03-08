@@ -1,0 +1,6 @@
+{
+    "watch": ["pages/api/", "lib/"],
+    "ext": "js,json",
+    "exec": "next dev"
+  }
+  
